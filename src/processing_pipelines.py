@@ -1,5 +1,5 @@
 from src.interfaces.processing import ProcessingPipeline
-from helpers import lower_case, remove_special_chars, tokenize, remove_stopwords
+from src.helpers import lower_case, remove_special_chars, tokenize, remove_stopwords
 
 
 class BasicStringTextProcessingPipeline(ProcessingPipeline):

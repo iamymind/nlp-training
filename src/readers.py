@@ -18,6 +18,7 @@ class PlainStringTextReader(TextReader):
     def get_text(self) -> str:
         """
         Opens plain text string data file, reads text, closes file
+
         :return: Text string from file
         """
         with open(self.path, 'r') as text_file:
@@ -26,24 +27,14 @@ class PlainStringTextReader(TextReader):
 
     @property
     def path(self) -> str:
-        """
-        Getter for data path string object
-        :return: path string
-        """
         return self._path
 
     @path.setter
     def path(self, path: str) -> None:
-        """
-        Sets path string variable
-        :param path: path string
-        :return: None
-        """
         self._path = path
 
     @property
     def pipeline(self) ->ProcessingPipeline:
-        """Getter for pipeline object"""
         return self._pipeline
 
     @pipeline.setter

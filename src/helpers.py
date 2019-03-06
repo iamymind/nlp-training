@@ -2,7 +2,7 @@ import re
 from pipe import Pipe
 from nltk.corpus import stopwords
 
-
+# Pipe element functions
 @Pipe
 def lower_case(text: str) -> str:
     """

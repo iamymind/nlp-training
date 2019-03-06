@@ -13,3 +13,12 @@ class TextReader(ABC):
         :return: text data in required types depending on requirements
         """
         pass
+
+
+class Batcher(ABC):
+    """
+    Batcher abstract class provides interface data batching classes
+    """
+    @abstractmethod
+    def get_batch(self):
+        pass
