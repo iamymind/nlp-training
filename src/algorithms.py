@@ -169,6 +169,3 @@ class Word2Vec:
     @n_embeddings.setter
     def n_embeddings(self, n_embeddings: int) -> None:
         self._n_embeddings = n_embeddings
-
-
-
