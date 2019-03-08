@@ -21,7 +21,7 @@ class PlainStringTextReader(TextReader):
 
         :return: Text string from file
         """
-        with open(self.path, 'r') as text_file:
+        with open(self.path, 'r', encoding="utf-8") as text_file:
             raw_text = text_file.read()
             return self.pipeline.run_pipeline(raw_text)
 

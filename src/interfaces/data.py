@@ -22,3 +22,7 @@ class Batcher(ABC):
     @abstractmethod
     def get_batch(self):
         pass
+
+    @abstractmethod
+    def int_key_vocabulary(self):
+        pass
